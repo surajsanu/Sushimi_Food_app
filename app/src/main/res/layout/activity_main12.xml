@@ -1,0 +1,183 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity12">
+
+
+    <!-- General Text -->
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category Sushi"
+        android:textSize="35dp"
+        android:textColor="#fff"
+        android:padding="16dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Types"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:padding="16dp"
+        android:layout_marginTop="80dp" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- Images with Horizontal Auto-Sliding -->
+    <LinearLayout
+        android:layout_below="@id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="140dp">
+
+        <!-- Image views for sliding -->
+        <ImageView
+            android:id="@+id/img21"
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:src="@drawable/img21"
+            android:scaleType="centerCrop"
+
+            android:layout_marginRight="16dp"
+            android:background="@drawable/corner2_radius"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:src="@drawable/img22"
+            android:id="@+id/img22"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/corner2_radius"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:src="@drawable/img23"
+            android:id="@+id/img23"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/corner2_radius"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:src="@drawable/img24"
+            android:id="@+id/img24"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/corner2_radius"/>
+
+
+        <!-- Add more image views as needed -->
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:src="@drawable/img25"
+            android:id="@+id/img25"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/corner2_radius"/>
+
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- Rectangular Boxes with Vertical Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium of A la carte"
+                android:textColor="#fff"
+                android:layout_marginTop="0dp"
+                android:textSize="25dp"
+                android:layout_gravity="center"/>
+
+
+
+            <ImageView
+                android:layout_width="360dp"
+                android:id="@+id/burger"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="@drawable/corner2_radius"
+                android:backgroundTint="#3D3D3D"
+                android:maxHeight="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/burger" />
+
+            <ImageView
+                android:layout_width="360dp"
+                android:id="@+id/aloo"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="@drawable/corner2_radius"
+                android:backgroundTint="#3D3D3D"
+                android:maxHeight="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aloo" />
+
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/pizza"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="@drawable/corner2_radius"
+                android:backgroundTint="#3D3D3D"
+                android:maxHeight="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pizza" />
+
+            <ImageView
+                android:layout_width="360dp"
+                android:id="@+id/icecream"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="@drawable/corner2_radius"
+                android:backgroundTint="#3D3D3D"
+                android:maxHeight="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icecream" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
